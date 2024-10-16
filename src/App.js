@@ -8,9 +8,10 @@ function App() {
       <div className='contenedor-principal'>
         <h1>Esto es lo que dicen nuestros alumnos sobre freeCodeCamp:</h1>
         {
-          users.map((user) => {
+          users.map((user, index) => {
             return (
               <Testimonio
+                key={index}
                 name={user.name}
                 country={user.country}
                 image={user.image}
